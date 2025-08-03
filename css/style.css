@@ -47,7 +47,21 @@ button{
 button:focus{
     outline: 1px solid var(--color-accent);
 }
+/* Common */
+.section{
+    padding: 4rem;
+    text-align: center;
+}
 
+.title{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
 /* Header */
 .header{
     background-color: #050a13;
@@ -129,7 +143,7 @@ button:focus{
     color: var(--color-black);
     margin: 2rem;
     padding: 0.5rem 1rem;
-    font-weight: bold;
+    font-weight: bold; /*좀 더 진하게 표현가능 */
     border-radius: 4px;
 }
 
@@ -138,5 +152,4 @@ button:focus{
     color: var(--color-text);
     outline: 2px solid var(--color-accent);
     /* border말고 outline을 사용하면 컨텐츠밀림 x */
-
 }
