@@ -328,3 +328,56 @@ button:focus{
     opacity: 1;
     top: 0;
 }
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    /* 열(column)을 4개 만든다.각 열의 너비는 1fr = 1 fraction unit → 전체 너비를 4등분해서 똑같이 나눠 가짐.*/
+    grid-template-rows: repeat(2, 1fr);
+    /*행(row)을 2개 만든다.각 행의 높이도 전체 높이를 똑같이 2등분해서 나눠 가짐.*/
+    gap: 1rem;
+}
+
+.project{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.project__img{
+    width: 100%;
+}
+
+.project__metadata{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease-in;
+    transform: translateY(-10px);
+}
+
+.project__metadata:hover{
+    opacity: 0.8;
+    transform: translateY(0px);
+}
+
+/* html에는 없는 css로만 꾸미기로만 넣어주는 용도 */
+.project__title:after{
+    content: '';
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0.5rem 0;
+    width: 50%;
+    height: 2px;
+    background-color: var(--color-accent);
+}
