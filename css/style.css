@@ -394,6 +394,7 @@ button:focus{
     margin-bottom: 2rem;
 }
 
+/* 짝수의 자식요소중에 그안에 이미지태그를 오더를 1번쨰로(0부터시작) */
 .testimonial:nth-child(even) .testimonial__img{
     order: 1;
 }
@@ -415,4 +416,50 @@ button:focus{
     color: var(--color-accent);
     font-weight: bold;
     filter: brightness(70%);
+}
+
+/* Arrow up */
+.arrow-up{
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 3px 3px 0px 0px var(--color-accent);
+    transition: all 250ms ease-in, transfrom 250ms ease-in;
+    line-height: 3.5rem; /* 아이콘 세로 중앙 정렬용 */
+}
+
+.arrow-up:hover{
+    background-color: var(--color-accent); /* 기존 box-shadow 색상 */
+    box-shadow: 5px 5px 0px 0px var(--color-primary); /* 기존 background 색상 */
+    color: var(--color-black); /* 텍스트 컬러도 잘 보이도록 필요시 추가 */
+    transform: translateY(-5px) scale(1.05); /* 살짝 위로 튕기고 커지게 */
+}
+
+
+/* Footer */
+#contact{
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.contact__links{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.contact__link{
+    transition: color 250ms ease-in;
+}
+
+.contact__link:hover{
+    color: var(--color-accent);
 }
