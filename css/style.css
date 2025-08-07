@@ -88,7 +88,7 @@ button:focus{
 
 .header--dark{
     background-color: var(--color-primary);
-    box-shadow: 0 4px 20px rgba(109, 40, 217, 0.4);
+    box-shadow: -10px -10px 30px 4px rgba(0,0,0,0.1), 10px 10px 30px 4px rgba(45,78,255,0.15);
 }
 
 .header__logo{
