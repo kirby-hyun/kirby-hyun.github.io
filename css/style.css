@@ -438,6 +438,7 @@ button:focus{
     box-shadow: 3px 3px 0px 0px var(--color-accent);
     transition: all 250ms ease-in, transfrom 250ms ease-in;
     line-height: 3.5rem; /* 아이콘 세로 중앙 정렬용 */
+    transition: opacity 400ms ease-in;
 }
 
 .arrow-up:hover{
