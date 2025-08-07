@@ -74,7 +74,7 @@ button:focus{
 }
 /* Header */
 .header{
-    background-color: #050a13;
+    background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
@@ -83,6 +83,12 @@ button:focus{
     justify-content: space-between;
     align-items: center;
     z-index: 1; /*헤더가 가장 높은곳에 위치하도록 지정 */
+    transition: all 250ms ease-in;
+}
+
+.header--dark{
+    background-color: var(--color-primary);
+    box-shadow: 0 4px 20px rgba(109, 40, 217, 0.4);
 }
 
 .header__logo{
