@@ -15,7 +15,6 @@ const home = document.querySelector('.home__container');
 const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', ()=> {
     home.style.opacity = 1 - window.scrollY / homeHeight;
-
 });
 
 //Arrow-up 버튼을 아래로 스크롤시 투명처리
