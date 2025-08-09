@@ -353,6 +353,12 @@ button:focus{
     grid-template-rows: repeat(2, 1fr);
     /*행(row)을 2개 만든다.각 행의 높이도 전체 높이를 똑같이 2등분해서 나눠 가짐.*/
     gap: 1rem;
+    transition: all 250ms ease-out;
+}
+
+.projects.anim-out {
+    opacity: 0;
+    transform: scale(0.96) translateY(20px);
 }
 
 .project{
