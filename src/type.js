@@ -15,7 +15,4 @@ new TypeIt('.home__title--strong',{
 .move(null,{ to:'END'})
 .pause(1000)
 .delete()
-.type('DevOps')
-.pause(2000)
-.delete()
 .go();
