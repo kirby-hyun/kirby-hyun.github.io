@@ -15,4 +15,9 @@ new TypeIt('.home__title--strong',{
 .move(null,{ to:'END'})
 .pause(1000)
 .delete()
+.pause(500)
+.type('Developer')
+.pause(1000)
+.delete()
+
 .go();

@@ -30,6 +30,7 @@
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
     <script type="module" src="src/type.js" defer></script>
+    <script src="src/particles/particles.js" defer></script>
 </head>
 
 <body>
@@ -57,11 +58,12 @@
     <main>
         <!-- Home -->
         <section id="home">
+            <div id="particles-js"></div>
             <div class="max-container home__container">
                 <img class="home__avatar" src="images/profile.png" alt="Hyun's profile">
                 <div>
                     <h2 class="home__title" aria-label="Hello, I'm Hyun Jong Kim">こんにちは <br />
-                        <strong class="home__title--strong">キムヒョンジョン</strong>と申します
+                        <strong class="home__title--strong">キムヒョンジョン</strong><span class="typing-sub">と申します</span>
                     </h2>
                     <p class="home__description">韓国出身の、好奇心旺盛なエンジニアの卵です</p>
                     <a class="home__contact" href="#contact">Contact Me</a>
@@ -336,6 +338,97 @@
             <p>©HyunJong Kim | Made with 💻 & ☕</p>
         </div>
     </footer>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 60,           // 입자 개수
+                        "density": {
+                            "enable": true,
+                            "value_area": 900
+                        }
+                    },
+                    "color": {
+                        "value": "#0099ff"    // 파란색 계열
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.4,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 4,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 10,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 140,
+                        "color": "#0099ff",
+                        "opacity": 0.2,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 3,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "bounce",   // 벽에 부딪히면 튕김
+                        "bounce": true,
+                        "attract": {
+                            "enable": false
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"      // 마우스 따라오는 효과
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"      // 클릭시 입자 추가
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 150,
+                            "line_linked": {
+                                "opacity": 0.4
+                            }
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+    </script>
+
 </body>
 
 </html>
