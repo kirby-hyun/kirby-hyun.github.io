@@ -26,6 +26,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Javascript -->
+    <script src="src/modal.js" defer></script>
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
@@ -74,7 +75,7 @@
         <!-- About -->
         <section id="about" class="section max-container">
             <h2 class="title">About me</h2>
-            <p class="description">日本で働きながら、Web開発のスキルを磨いています。目指すのは、人の役に立つサービスを作ること
+            <p class="description">日本で働きながら、Web開発のスキルを磨いています。<br>目指すのは、人の役に立つサービスを作ること
             </p>
             <ul class="majors">
                 <li class="major">
@@ -115,7 +116,7 @@
                 <h2 class="title">My Skills</h2>
                 <p class="description">Skills & Attributes</p>
                 <p>
-                    HTML、CSS、JavaScriptを中心に身につけており、TypeScript、React、Node.jsのスキルアップにも取り組んでいます。
+                    HTML、CSS、JavaScriptを中心に身につけており、React、Node.jsのスキルアップもも取り組んでいます。
                     新しいツールや最新技術の習得に情熱を持ち、幅広く活躍できる開発者を目指しています。
                 </p>
                 <div class="skills">
@@ -338,6 +339,14 @@
             <p>©HyunJong Kim | Made with 💻 & ☕</p>
         </div>
     </footer>
+    <!-- Modal -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <p>あくまで参考用のポートフォリオです。<br>
+                （内容はサンプルとしてご覧ください。）</p>
+        </div>
+    </div>
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             particlesJS('particles-js', {
